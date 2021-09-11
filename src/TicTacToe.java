@@ -11,8 +11,9 @@ public class TicTacToe {
 
     }
     public static void main(String[] args){
-        char charArray[];
-        charArray=new char[10];
+        char board[];
+        board=new char[10];
+        System.out.println(board);
         enterCharacter();
 
 
