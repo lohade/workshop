@@ -5,9 +5,17 @@ public class TicTacToe {
     static void enterCharacter(){
         System.out.println("enter X or O to enter of person1:");
         Scanner sc=new Scanner(System.in);
-        String person1=sc.next();
-        System.out.println("entering computer:");
-        String person2=sc.next();
+        char person1=sc.next().charAt(0);
+
+        char computer;
+        if(person1=='x'){
+            computer='O';
+            System.out.println("computer enter"+ computer);
+        }
+        else{
+            computer='x';
+            System.out.println("computer enter"+ computer);
+        }
 
     }
     public static void main(String[] args){
