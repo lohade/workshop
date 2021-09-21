@@ -26,6 +26,7 @@ public class TicTacToe {
     public void inputboard() {
         //System.out.println("Enter the position you want to insert");
         System.out.println(board[pos]+"X");
+        showBoard();
     }
     public static void main(String args[]){
         // int pos=0;
@@ -35,10 +36,9 @@ public class TicTacToe {
         char userinput = chooseLetter(input);
         obj.inputArray();
         obj.showBoard();
-        obj.inputboard();
         System.out.println("Enter the position you want to insert");
         pos = input.nextInt();
-
+        obj.inputboard();
     }
 
 }
