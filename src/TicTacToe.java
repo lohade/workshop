@@ -1,30 +1,31 @@
 import java.util.Scanner;
 
+public class compute{
+    //Scanner in = new Scanner(System.in);
+    static void chooseInput(){
+        Scanner in = new Scanner(System.in);
+        String turn ="X";
+        System.out.println("Enter the choice X or Y");
+        String input = in.nextLine();
+        if(input.equals("X")){
+            turn = "Y";
+        }
+            else{
+                turn ="Y";
+            }
+        }
+    }
 public class TicTacToe {
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        String[] board = new String[10];
+        String turn = "x";
+        String winner=null;
+        for(int i=1;i< board.length;i++)
+        {
+            board[i]="";
 
-    static void enterCharacter(){
-        System.out.println("enter X or O to enter of person1:");
-        Scanner sc=new Scanner(System.in);
-        char person1=sc.next().charAt(0);
-
-        char computer;
-        if(person1=='x'){
-            computer='O';
-            System.out.println("computer enter"+ computer);
-        }
-        else{
-            computer='x';
-            System.out.println("computer enter"+ computer);
         }
 
     }
-    public static void main(String[] args){
-        char board[];
-        board=new char[10];
-        System.out.println(board);
-        enterCharacter();
-
-
-    }
-
 }
